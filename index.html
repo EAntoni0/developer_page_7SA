@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primera Pagina Web HTML</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>ERICK ANTONIO CHAN CHIN</h1>
+        <h1 class="title">ERICK ANTONIO CHAN CHIN</h1>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Servicios</a>
@@ -82,6 +83,21 @@
         </main>
         <section>
             <h2>Contacto</h2>
+            <form>
+                <div>
+                    <label for="">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label for="">Correo: </label>
+                    <input type="email" name="email" placeholder="Correo" required>
+                </div>
+                <div>
+                    <label for="">Mensaje: </label>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
         <footer>
             <p>Todos los derechos reservados ©</p>
