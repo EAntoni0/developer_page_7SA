@@ -12,7 +12,31 @@ html{
     /**/
     font-size: 62,5%;
     font-family: krub;
+    box-sizing: border-box; 
 }
+
+*, *::before, *:after{
+    box-sizing: inherit;
+}
+
+/*tipografia*/
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+
 body{
     /*16 px es el estandar para navegadores*/
     font-size: 16px;
@@ -62,6 +86,10 @@ body{
         justify-content: space-between;
     }
 
+    .boton{
+        width: auto;
+    }
+
 }
 
 .navegacion-principal a:hover{
@@ -73,4 +101,51 @@ body{
     background-image: url("../img/hero.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    /*alinacion vertical y horizontal*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero p, 
+.contenido-hero h2{
+    color: var(--blanco);
+}
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .boton{
+        width: auto;
+
+    }
+
 }
